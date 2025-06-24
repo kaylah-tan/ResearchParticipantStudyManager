@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root container */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #797979;
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  width: 50%;
+  height: 60%;
+}
+
+/* Login form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+/* Research side layout */
+.Research_Side {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+/* Research side header */
+.Research_Side-header {
+  display: flex;
+  justify-content: center; /* Center the header text */
+  align-items: center;
+  color: white;
+  background-color: #333;
+  padding: 20px;
+  width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Allow wrapping in case of smaller screens */
+}
+
+.Research_Side-header h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1; /* Allow the h1 to take available space */
+}
+
+/* Buttons in the header */
+.Research_Side-header button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Research_Side-header button:hover {
+  background-color: #555;
+}
+
+/* Adjust button placement */
+.Research_Side-header button:first-child {
+  margin-left: 0;
+}
+
+.Research_Side-header button:last-child {
+  margin-right: 0;
+}
+
+
+
+.Research_Side-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.Research_Side-body div {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add buttons in the body */
+.Research_Side-body button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Research_Side-body button:hover {
+  background-color: #555;
+}
+
+/* Study entry element with inputs */
+.study_entry_element {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="number"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #444; /* Highlight border on focus */
+}
+
+/* Checkbox specific styling */
+input[type="checkbox"] {
+  width: auto;
+  margin-top: 0;
+  margin-right: 10px;
+}
+/* Calendar styles */
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Responsive images */
+img {
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: cover;
+}
+
+/* Study table styles */
+.study_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.study_table th,
+.study_table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left; /* Ensures columns align */
+  vertical-align: middle; /* Center content vertically */
+}
+
+.study_table th {
+  background-color: #f2f2f2;
+}

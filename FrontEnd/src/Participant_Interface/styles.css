@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Lora:wght@500&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #eff2f9;
+}
+
+* {
+  font-family: "Montserrat" !important;
+}
+
+body {
+  overflow-y: auto;
+  margin: 0; /* just to reset default spacing */
+}
+
+.title {
+  font-family: "Lora", serif;
+}
+
+/* Horizontal Menu Bar */
+.horizontal-menu-bar {
+  width: 100%;
+  height: 140px;
+  background: #002868;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.horizontal-menu-bar .logo-section {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: #002868;
+}
+
+.horizontal-menu-bar .logo-section img {
+  width: auto;
+  height: 35%;
+}
+
+.horizontal-menu-bar .text-section {
+  display: flex;
+  gap: 5vw;
+  color: white;
+  margin-left: auto;
+}
+
+.horizontal-menu-bar .text-section .menu-item {
+  font-size: 18px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.horizontal-menu-bar .text-section .menu-item:hover {
+  color: #ffc627 !important;
+  background-color: transparent;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  align-items: center;
+  background: #010e30;
+  gap: 3vw;
+}
+
+.nav-button {
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #fff;
+  background-color: transparent !important;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nav-button:hover {
+  color: #ffc627 !important; /* This is the one currently being used */
+  background-color: transparent;
+}
+
+.nav-button.active {
+  color: #ffc627 !important; /* Highlighted color */
+  font-weight: 500 !important; /* Slightly bolder text */
+}
+
+@media (max-width: 750px) {
+  .horizontal-menu-bar .logo-section img {
+    display: none;
+  }
+
+  .horizontal-menu-bar .logo-section {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .horizontal-menu-bar .text-section {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .navigation-bar {
+    justify-content: center;
+    padding-left: 0;
+    gap: 3vw;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-bar .nav-button {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+}
+
+.body-button {
+  min-width: "120px";
+  max-width: "auto";
+  font-family: "Montserrat";
+  font-weight: "bold";
+  background-color: #002868 !important;
+  border-radius: 8px;
+  color: "#ffffff";
+}
+
+.body-button:hover {
+  color: #ffc627;
+}
+
+.textField input[type="text"],
+.textField input[type="number"] {
+  border: 0px solid #d0d0d0 !important;
+  margin-top: 10px !important;
+}
+
+.textField {
+  background-color: #f0f0f0;
+}
+
+.textField.editing {
+  background-color: white;
+  color: black;
+}
+
+.textField .MuiOutlinedInput-root {
+  border-color: #d0d0d0;
+  font-size: 1rem;
+  height: 2em;
+}
+
+.textField.editing .MuiOutlinedInput-root {
+  border-color: black;
+  font-size: 1rem;
+  height: 2em;
+}
+
+.textFieldContainer {
+  display: flex;
+  gap: 50px;
+  max-width: 600px;
+}
+
+.custom-toggle {
+  width: 25px;
+  height: 25px;
+  border: 2px solid gray;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-toggle.Mui-selected {
+  background-color: rgba(2, 141, 2, 0.906) !important;
+  color: white !important;
+  border-color: green !important;
+}
+
+.custom-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-toggle.Mui-selected:hover {
+  background-color: darkgreen !important;
+}
+
+.custom-toggle.Mui-disabled {
+  background-color: lightgray !important;
+  color: gray !important;
+  border-color: gray !important;
+  opacity: 0.6;
+}
