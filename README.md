@@ -1,4 +1,6 @@
-# How to run the program:
+# This is a Research Participant System created during my senior capstone course. 
+
+## How to run the program:
 
 1. Install Node - go to nodejs.org/en/download and follow the instructions.
 2. Open the repository, and open two terminal windows. In one, cd to BackEnd, and in the other, cd into FrontEnd.
